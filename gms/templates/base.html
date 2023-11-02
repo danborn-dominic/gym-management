@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %} - Flaskr</title>
+    <title>{% block title %}{% endblock %} - Gym Management System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 <nav>
-    <h1>Flaskr</h1>
+    <h1>Gym Management System</h1>
     <ul>
-        {% if g.user %}
-            <li><span>{{ g.user['username'] }}</span></li>
-            <li><a href="{{ url_for('auth.logout') }}">Log Out</a></li>
-        {% else %}
-            <li><a href="{{ url_for('auth.register') }}">Register</a></li>
-            <li><a href="{{ url_for('auth.login') }}">Log In</a></li>
-        {% endif %}
+        <li><a href="{{ url_for('members.view') }}">View Members</a></li>
     </ul>
 </nav>
 <main class="content">

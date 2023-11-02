@@ -1,4 +1,5 @@
 import os
+import logging
 
 from flask import Flask
 def create_app(test_config=None):
@@ -7,6 +8,8 @@ def create_app(test_config=None):
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'gms.sqlite'),
     )
+
+    logging.basicConfig(filename='app.log', level=logging.DEBUG)
 
     if test_config is None:
         app.config.from_pyfile('config.py', silent=True)
@@ -18,14 +21,10 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    @app.route('/')
-    def hello():
-        return 'Hello, World!'
-
     from . import db
     db.init_app(app)
 
-    from . import member_management
-    app.register_blueprint(member_management.bp)
+    from . import members
+    app.register_blueprint(members.bp)
 
     return app

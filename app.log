@@ -1,0 +1,68 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 11:42:13] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 11:42:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 11:42:16] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 11:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:01:40] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:01:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:09:52] "[35m[1mGET /members/view HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:09:52] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:09:52] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:09:53] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:09:53] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:10:08] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:10:08] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:18:26] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:18:26] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:43:34] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:43:34] "GET /static/style.css HTTP/1.1" 200 -
+INFO:gms:Member Bobby Lee with email bobby@gmail.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:44:22] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:44:22] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:44:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 699-510-629
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:54:29] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:54:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member John Doe with email johndoe@gmail.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:55:13] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:55:13] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Nov/2023 17:55:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

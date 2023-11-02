@@ -4,13 +4,13 @@ DROP TABLE IF EXISTS Payment;
 DROP TABLE IF EXISTS Trainers;
 DROP TABLE IF EXISTS Member;
 
-CREATE TABLE Member (
+CREATE TABLE Members (
   member_id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
   email TEXT UNIQUE NOT NULL,
   phone_number TEXT NOT NULL,
   dob DATE NOT NULL,
-  date_joined DATE NOT NULL,
+  date_joined DATE NOT NULL DEFAULT (date('now')),
   membership_type TEXT NOT NULL
 );
 
@@ -22,7 +22,7 @@ CREATE TABLE Trainers (
   specialization TEXT NOT NULL
 );
 
-CREATE TABLE Class (
+CREATE TABLE Classes (
   class_id INTEGER PRIMARY KEY AUTOINCREMENT,
   class_name TEXT NOT NULL,
   description TEXT,
@@ -33,7 +33,7 @@ CREATE TABLE Class (
   FOREIGN KEY (trainer_id) REFERENCES Trainers (trainer_id)
 );
 
-CREATE TABLE Payment (
+CREATE TABLE Payments (
   payment_id INTEGER PRIMARY KEY AUTOINCREMENT,
   member_id INTEGER NOT NULL,
   amount DECIMAL(10, 2) NOT NULL,

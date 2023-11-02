@@ -1,88 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Management</title>
-    <link rel="stylesheet" href="styles.css"> <!-- link to your CSS file -->
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Member Management</a></li>
-                <li><a href="#">Class Enrollment</a></li>
-            </ul>
-            <div class="menu-icon">
-                <!-- Menu icon, can be replaced with a SVG or an image -->
-                ☰
+{% extends "base.html" %}
+
+{% block title %}
+    Member Management
+{% endblock %}
+
+{% block header %}
+    <nav class="sub-nav">
+        <ul>
+            <li><a href="#">Member Management</a></li>
+            <li><a href="#">Class Enrollment</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<div class="main-container">
+    <section class="registration">
+        <h2>Register new member</h2>
+        <form method="post" action="{{ url_for('members.register') }}">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <div class="membership-type">
+                <label for="type">Membership type:</label>
+                <select name="type" id="type">
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="registration">
-            <h2>Register new member</h2>
-            <form method="post" action="{{ url_for('members.register') }}">
-                <label for="name">name:</label>
-                <input type="text" id="name" name="name">
 
-                <label for="email">email:</label>
-                <input type="email" id="email" name="email">
+            <button type="submit">Register</button>
+        </form>
+    </section>
 
-                <label for="phone">phone:</label>
-                <input type="tel" id="phone" name="phone">
-
-                <label for="dob">dob:</label>
-                <input type="date" id="dob" name="dob">
-
-                <label for="type">type:</label>
-                <div class="membership-type">
-                    <input type="radio" id="monthly" name="type" value="monthly">
-                    <label for="monthly">monthly</label>
-
-                    <input type="radio" id="quarterly" name="type" value="quarterly">
-                    <label for="quarterly">quarterly</label>
-
-                    <input type="radio" id="yearly" name="type" value="yearly">
-                    <label for="yearly">yearly</label>
-                </div>
-
-                <button type="submit">Register</button>
-            </form>
-
-        </section>
-
-        <section class="view-members">
-            <h2>View Members</h2>
-            <table>
-                <thead>
+    <section class="view-members">
+        <h2>View Members</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>DOB</th>
+                    <th>Joined</th>
+                    <th>Type</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in members %}
                     <tr>
-                        <th>member_id</th>
-                        <th>name</th>
-                        <th>email</th>
-                        <th>phone</th>
-                        <th>dob</th>
-                        <th>date_join</th>
-                        <th>type</th>
-                        <th>actions</th>
+                        <td>{{ member.member_id }}</td>
+                        <td>{{ member.name }}</td>
+                        <td>{{ member.email }}</td>
+                        <td>{{ member.phone_number }}</td>
+                        <td>{{ member.dob }}</td>
+                        <td>{{ member.date_joined }}</td>
+                        <td>{{ member.membership_type }}</td>
                     </tr>
-                </thead>
-                <tbody>
-                    <!-- Sample rows based on your mockup, repeat for each member -->
-                    <tr>
-                        <td>37829</td>
-                        <td>Ann Lee</td>
-                        <td>ex@gmail.com</td>
-                        <td>12345678</td>
-                        <td>7/7/03</td>
-                        <td>10/5/23</td>
-                        <td>monthly</td>
-                        <td><a href="#">edit/delete</a></td>
-                    </tr>
-                    <!-- ... repeat for other members ... -->
-                </tbody>
-            </table>
-        </section>
-    </main>
-</body>
-</html>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock %}
