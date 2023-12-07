@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Member{% endblock %}
+
+{% block content %}
+<h2>Edit Member</h2>
+<form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="{{ member.name }}" required>
+
+    <label for="email">Email address:</label>
+    <input type="email" id="email" name="email" value="{{ member.email }}" required>
+
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" value="{{ member.phone_number }}" required>
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="dob" value="{{ member.dob }}" required>
+
+    <label for="date_joined">Date joined:</label>
+    <input type="date" id="date_joined" name="date_joined" value="{{ member.date_joined }}" required>
+
+    <label for="type">Membership type:</label>
+    <select id="type" name="type" required>
+        <option value="monthly" {% if member.membership_type == 'monthly' %}selected{% endif %}>Monthly</option>
+        <option value="quarterly" {% if member.membership_type == 'quarterly' %}selected{% endif %}>Quarterly</option>
+        <option value="yearly" {% if member.membership_type == 'yearly' %}selected{% endif %}>Yearly</option>
+    </select>
+
+    <input type="submit" value="Save Changes">
+</form>
+{% endblock %}

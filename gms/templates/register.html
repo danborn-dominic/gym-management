@@ -42,7 +42,6 @@
             <button type="submit">Register</button>
         </form>
     </section>
-
     <section class="view-members">
         <h2>View Members</h2>
         <table>
@@ -55,7 +54,7 @@
                     <th>DOB</th>
                     <th>Joined</th>
                     <th>Type</th>
-                    <th>Actions</th>
+                    <th class="actions-column">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -68,10 +67,17 @@
                         <td>{{ member.dob }}</td>
                         <td>{{ member.date_joined }}</td>
                         <td>{{ member.membership_type }}</td>
+                        <td class="actions-column">
+                            <a href="{{ url_for('members.edit', id=member.member_id) }}" class="action-btn edit-btn">Edit</a>
+                            <form method="POST" action="{{ url_for('members.delete', id=member.member_id) }}" onsubmit="return confirm('Are you sure?');" class="action-form">
+                                <button type="submit" class="action-btn delete-btn">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
         </table>
     </section>
 </div>
+
 {% endblock %}
