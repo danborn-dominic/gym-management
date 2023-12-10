@@ -130,7 +130,6 @@ def class_enrollment():
         'trainer': f'%{filter_trainer}%' if filter_trainer else None,
     }).fetchall()
 
-    # Calculate statistics and round to one decimal place
     total_classes = len(classes)
     average_duration = round(sum(c['duration'] for c in classes) / total_classes, 1) if classes else 0
     average_members = round(sum(c['max_members'] for c in classes) / total_classes, 1) if classes else 0

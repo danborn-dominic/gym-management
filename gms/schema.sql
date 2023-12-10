@@ -61,6 +61,3 @@ CREATE INDEX idx_members_type ON Members(membership_type);
 CREATE INDEX idx_classes_trainer ON Classes(trainer_id);
 CREATE INDEX idx_classes_date ON Classes(class_date);
 CREATE INDEX idx_classes_name ON Classes(class_name);
-
-CREATE INDEX idx_trainers_name ON Trainers(name);
-CREATE INDEX idx_trainers_specialization ON Trainers(specialization);
