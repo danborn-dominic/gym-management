@@ -83,3 +83,36 @@ def delete(id):
     db.commit()
     flash('Member successfully deleted.')
     return redirect(url_for('members.view'))
+
+
+@bp.route('/class_enrollment', methods=['GET'])
+def class_enrollment():
+    db = get_db()
+    # Retrieve filter parameters from the request's query string
+    filter_start_date = request.args.get('start_date')
+    filter_end_date = request.args.get('end_date')
+    filter_trainer = request.args.get('trainer')
+
+    query = """
+    SELECT Classes.class_id, Classes.class_name, Classes.description, Classes.class_date, 
+           Trainers.name as trainer_name, Classes.schedule_time, Classes.duration, Classes.max_members
+    FROM Classes
+    JOIN Trainers ON Classes.trainer_id = Trainers.trainer_id
+    WHERE (COALESCE(:start_date, '') = '' OR Classes.class_date >= :start_date)
+    AND (COALESCE(:end_date, '') = '' OR Classes.class_date <= :end_date)
+    AND (COALESCE(:trainer, '') = '' OR Trainers.name LIKE :trainer)
+    ORDER BY Classes.class_date, Classes.schedule_time
+    """
+    classes = db.execute(query, {
+        'start_date': filter_start_date,
+        'end_date': filter_end_date,
+        'trainer': f'%{filter_trainer}%' if filter_trainer else None,
+    }).fetchall()
+
+    # Calculate statistics and round to one decimal place
+    total_classes = len(classes)
+    average_duration = round(sum(c['duration'] for c in classes) / total_classes, 1) if classes else 0
+    average_members = round(sum(c['max_members'] for c in classes) / total_classes, 1) if classes else 0
+
+    return render_template('class_enrollment.html', classes=classes, total_classes=total_classes,
+                           average_duration=average_duration, average_members=average_members)

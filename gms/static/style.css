@@ -166,3 +166,18 @@ table .actions-column {
     width: 100px;
 }
 
+.class-enrollment-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-section {
+    flex-basis: 20%; /* Adjust the width as needed */
+    padding-right: 20px; /* Optional spacing between columns */
+}
+
+.class-data-section {
+    flex-grow: 1;
+}
+
+

@@ -201,3 +201,244 @@ INFO:werkzeug:127.0.0.1 - - [07/Dec/2023 16:49:44] "GET /static/style.css HTTP/1
 INFO:werkzeug:127.0.0.1 - - [07/Dec/2023 16:49:50] "[32mPOST /members/4/delete HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [07/Dec/2023 16:49:50] "GET /members/view HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [07/Dec/2023 16:49:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:27:50] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:27:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member Dominic Danborn with email dominicdanborn@gmail.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:07] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:07] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member Tom Avery with email tom.av@yahoo.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:52] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:52] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:28:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member Max Thompson with email max.thompson@gmail.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:30:52] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:30:52] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:30:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member Sarah Riley with email sarah.r@yahoo.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:31:57] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:31:57] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:31:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:gms:Member Jane Tilly with email jane.t23@gmail.com was successfully registered.
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:33:11] "[32mPOST /members/register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:33:11] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:33:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:09] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:28] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:35] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:40] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:49:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:20] "[35m[1mGET /members/view HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:20] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:20] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:20] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:20] "[36mGET /members/view?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:49] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:53:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:01] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:01] "GET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:01] "GET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:01] "GET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:01] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:30] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:33] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:35] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:35] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:35] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 16:54:35] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:18] "[33mGET /members HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:23] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:29] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:29] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:29] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:08:29] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:16:51] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:16:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:16:54] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:16:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:26:35] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:26:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:32:40] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:32:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:32:56] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:32:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:33:00] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 17:33:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:05:05] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:05:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:20] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:22] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:39] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:41] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:06:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:16:23] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [09/Dec/2023 21:16:23] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:49:33] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:49:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:53:52] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:53:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:21] "GET /members/class_enrollment?start_date=2024-01-10&end_date=2024-01-20&trainer=&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:33] "GET /members/class_enrollment?start_date=2024-01-10&end_date=2024-01-20&trainer=John+Doe&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:50] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:52] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe&type= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:54:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:55:05] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 13:55:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:04:45] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:04:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:04:53] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:04:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:23] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:23] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:23] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:23] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:23] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:36] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:36] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:36] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:36] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:36] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:46] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:48] "[35m[1mGET /members/class_enrollment HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:48] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:48] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:06:48] "[36mGET /members/class_enrollment?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:07:34] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:07:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:07:37] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:07:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:09:10] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:09:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:09:19] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:09:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:21:50] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:21:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:33:44] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:33:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:03] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:04] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:28] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:39:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/dominicdanborn/Documents/Fall23/CS348/project/project_code/gms/members.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:41:27] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:41:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:41:35] "GET /members/class_enrollment?start_date=&end_date=&trainer=John+Doe HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:41:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:46:22] "GET /members/view HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:46:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:46:30] "GET /members/class_enrollment HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Dec/2023 14:46:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 130-809-088

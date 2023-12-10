@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Class Enrollment{% endblock %}
+
+{% block content %}
+<div class="class-enrollment-container">
+    <section class="filter-section">
+        <h2>Filter by:</h2>
+        <form method="get" action="{{ url_for('members.class_enrollment') }}">
+            <label for="start_date">Start date:</label>
+            <input type="date" id="start_date" name="start_date" value="{{ request.args.get('start_date', '') }}">
+
+            <label for="end_date">End date:</label>
+            <input type="date" id="end_date" name="end_date" value="{{ request.args.get('end_date', '') }}">
+
+            <label for="trainer">Trainer:</label>
+            <input type="text" id="trainer" name="trainer" value="{{ request.args.get('trainer', '') }}">
+
+            <input type="submit" value="Apply Filters">
+        </form>
+        <h2>Report</h2>
+        <div class="report-statistics">
+            <p>Total number of classes: {{ total_classes }}</p>
+            <p>Average class length (minutes): {{ average_duration }}</p>
+            <p>Average number of members: {{ average_members }}</p>
+            <!-- Add any other statistics here -->
+        </div>
+    </section>
+
+    <section class="class-data-section">
+        <h2>Class Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Class Name</th>
+                    <th>Description</th>
+                    <th>Trainer</th>
+                    <th>Schedule Time</th>
+                    <th>Duration (minutes)</th>
+                    <th>Max Members</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for class in classes %}
+                <tr>
+                    <td>{{ class.class_date }}</td>
+                    <td>{{ class.class_name }}</td>
+                    <td>{{ class.description }}</td>
+                    <td>{{ class.trainer_name }}</td>
+                    <td>{{ class.schedule_time }}</td>
+                    <td>{{ class.duration }}</td>
+                    <td>{{ class.max_members }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</div>
+{% endblock %}
