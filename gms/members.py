@@ -33,8 +33,29 @@ def register():
 @bp.route('/view')
 def view():
     db = get_db()
-    members = db.execute('SELECT * FROM members').fetchall()
+
+    filter_email = request.args.get('filter_email', '')
+    filter_phone = request.args.get('filter_phone', '')
+    filter_type = request.args.get('filter_type', '')
+
+    query = 'SELECT * FROM members WHERE 1=1'
+    parameters = {}
+
+    if filter_email:
+        query += ' AND email = :filter_email'
+        parameters['filter_email'] = filter_email
+
+    if filter_phone:
+        query += ' AND phone_number = :filter_phone'
+        parameters['filter_phone'] = filter_phone
+
+    if filter_type:
+        query += ' AND membership_type = :filter_type'
+        parameters['filter_type'] = filter_type
+
+    members = db.execute(query, parameters).fetchall()
     return render_template('register.html', members=members)
+
 
 @bp.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):

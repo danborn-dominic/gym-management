@@ -32,6 +32,24 @@
 
             <button type="submit">Register</button>
         </form>
+        <h2>Filter Members</h2>
+        <form method="get" action="{{ url_for('members.view') }}">
+            <label for="filter_email">Email:</label>
+            <input type="email" id="filter_email" name="filter_email" value="{{ request.args.get('filter_email', '') }}">
+
+            <label for="filter_phone">Phone:</label>
+            <input type="tel" id="filter_phone" name="filter_phone" value="{{ request.args.get('filter_phone', '') }}">
+
+            <label for="filter_type">Membership Type:</label>
+            <select id="filter_type" name="filter_type">
+                <option value="">--All--</option>
+                <option value="monthly" {% if request.args.get('filter_type', '') == 'monthly' %} selected {% endif %}>Monthly</option>
+                <option value="quarterly" {% if request.args.get('filter_type', '') == 'quarterly' %} selected {% endif %}>Quarterly</option>
+                <option value="yearly" {% if request.args.get('filter_type', '') == 'yearly' %} selected {% endif %}>Yearly</option>
+            </select>
+
+            <button type="submit">Apply Filters</button>
+        </form>
     </section>
     <section class="view-members">
         <h2>View Members</h2>
